@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <link type="text/css" rel="stylesheet" media="all" href="style.css" />
+      <body>
+        <iframe src="lib/hello.html" width="200" height="200" />
+        <script>
+            'use strict';
+            //сложение
+            
+        function Calc(compute,a,b) {
+            switch(compute){ 
+                
+                case 'add':  
+                return a+b;
+                break;
+                
+                case'multi': 
+                return a*b;
+                break;        
+                
+                case'subtract':
+                return a-b;
+            }
+}
+let a=+prompt('введите значение a','');
+let compute=prompt('выберите действие(add,multi,subtract)','');
+let b=+prompt('введите значение b','');
+
+let result = Calc(compute, a, b);
+alert (result);
+
+
+        </script>
+    </body>
+  </head>
+</html>
